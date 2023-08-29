@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mercado</h1>
+  </header>
+
+  <div class="container">
+    <div class="item" onclick="showOverlay(0)">
+      <div class="item-content">
+        <img src="aderezos.jpg" alt="Alimento 1">
+        <p>Descripción del alimento 1</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(1)">
+      <div class="item-content1">
+        <img src="chocolates.jpg" alt="Alimento 2">
+        <p>Descripción del alimento 2</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(2)">
+      <div class="item-content2">
+        <img src="condimentos.jpg" alt="Alimento 3">
+        <p>Descripción del alimento 3</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(3)">
+      <div class="item-content3">
+        <img src="huevo.jpg" alt="Alimento 4">
+        <p>Descripción del alimento 4</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(4)">
+      <div class="item-content4">
+        <img src="leche.jpg" alt="Alimento 5">
+        <p>Descripción del alimento 5</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(5)">
+      <div class="item-content5">
+        <img src="manteca.jpg" alt="Alimento 6">
+        <p>Descripción del alimento 6</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(6)">
+      <div class="item-content6">
+        <img src="pan.jpg" alt="Alimento 7">
+        <p>Descripción del alimento 7</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(7)">
+      <div class="item-content7">
+        <img src="queso.jpg" alt="Alimento 8">
+        <p>Descripción del alimento 8</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(8)">
+      <div class="item-content8">
+        <img src="verduras.jpg" alt="Alimento 9">
+        <p>Descripción del alimento 9</p>
+      </div>
+    </div>
+    <div class="item" onclick="showOverlay(9)">
+      <div class="item-content9">
+        <img src="yogurth.jpg" alt="Alimento 10">
+        <p>Descripción del alimento 10</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart">
+    <button onclick="resetCart()">Reiniciar Carrito</button>
+    <h2>Carrito</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <img src="" alt="Alimento">
+      <p class="price">$XX.XX</p>
+      <button class="buy-button">Comprar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Derechos de autor © 2023 Mercado. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
